@@ -34,15 +34,16 @@ For detailed usage instructions and examples, please refer to the documentation 
   
 4. You are now ready to use the module and its functions as described in the documentation
 
++Note: Don't forget to replace "your_api_key_here".
 
-## Status e badges shields 🦄
+## Contributing ✨
 
-Aperfeiçoe o seu perfil e os seus repositórios adicionando **[cards de status](https://github.com/iuricode/readme-template/tree/main/cards-status/readme.md)** e **[badges shields](https://github.com/iuricode/readme-template/tree/main/badges-shields/readme.md)** ao seu readme. Esses cards proporcionam uma visão aprimorada e detalhada das informações relevantes, tornando o seu perfil e os seus projetos ainda mais impressionantes.
+Contributions to this project are welcome! If you encounter issues or have suggestions for improvements, please create an issue or submit a pull request.
 
-## Contribuição ✨
+## About the Author ✨
 
-Ajude a comunidade tornando este projeto ainda mais incrível. Leia como contribuir clicando **[aqui](https://github.com/iuricode/readme-template/blob/main/CONTRIBUTING.md)** e a **[licença](https://github.com/iuricode/readme-template/blob/main/LICENSE.md)**. Estou convencido de que juntos alcançaremos coisas incríveis! 
+**[aqui](https://github.com/iuricode/readme-template/blob/main/CONTRIBUTING.md)** e a **[licença](https://github.com/iuricode/readme-template/blob/main/LICENSE.md)** - Lucas is LATAM Solutions Architect for Cymulate.
 
-## Aprenda desenvolvimento frontend ❤️
+## License ❤️
 
-Este repositório é um projeto gratuito para a comunidade de desenvolvedores, mas você pode me ajudar comprando o meu ebook "**[eFront - Estudando frontend do zero](https://iuricode.com/efront)**" se estiver interessado em aprender ou melhorar suas habilidades de desenvolvimento frontend. A sua compra me ajuda a produzir e fornecer mais conteúdo gratuito para a comunidade. Adquira agora e comece sua jornada no desenvolvimento frontend.
+This project is licensed under the MIT License.
