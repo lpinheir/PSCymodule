@@ -23,12 +23,12 @@ For detailed usage instructions and examples, please refer to the documentation 
 
 ## Installation 🎉
 
-1. Clone or download this repository to your local machine.1
-Import the module by running the following command in PowerShell:
+1. Clone or download this repository to your local machine
+2. Import the module by running the following command in PowerShell:
 `Import-Module .\MyApiModule.psm1`
-Set your Cymulate API key using the Connect-CymApi function:
+3. Set your Cymulate API key using the Connect-CymApi function:
 `Connect-CymApi -ApiKey "your_api_key_here"`
-You are now ready to use the module and its functions as described in the documentation
+4. You are now ready to use the module and its functions as described in the documentation
 
 
 ## Status e badges shields 🦄
