@@ -42,7 +42,7 @@ Contributions to this project are welcome! If you encounter issues or have sugge
 
 ## About the Author ✨
 
-**[aqui](https://github.com/iuricode/readme-template/blob/main/CONTRIBUTING.md)** e a **[licença](https://github.com/iuricode/readme-template/blob/main/LICENSE.md)** - Lucas is LATAM Solutions Architect for Cymulate.
+**[Lucas M. Pinheiro](https://www.linkedin.com/in/lmpin/)** - Lucas is LATAM Solutions Architect for Cymulate.
 
 ## License ❤️
 
