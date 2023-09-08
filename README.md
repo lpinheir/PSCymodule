@@ -1,19 +1,35 @@
 ![Alt text](https://uploads-us-west-2.insided.com/cymulate-en/attachment/85f44e4c-5f50-4be4-b68b-3bd5671e0d2a.png)
 
 # PSCymodule
-PowerShell module for Interacting with Cymulate platform
+This PowerShell module provides a convenient way to interact with the Cymulate platform's API. Cymulate is a comprehensive cyber security validation platform that allows organizations to assess and optimize their security posture. With this module, you can programmatically access Cymulate's API to retrieve findings, scores, environments, and immediate threat intelligence.
 
-# Readme Template 📜
+# Features 📜
 
-Bem-vindo(a) ao **Readme Template**! Aqui você encontrará uma variedade de modelos de readme para usar em seus repositórios e perfil no GitHub. Explore nossa coleção de templates e encontre aquele que melhor se adequa ao seu projeto. Comece agora mesmo e deixe o seu readme brilhar!
+Connect to Cymulate API: Set and manage your Cymulate API key using the Connect-CymApi function.
 
-## Templates de perfil ☕️
+Retrieve Findings: Fetch security findings based on various filters like module, client ID, risk, and more using the Get-CymFindings function. You can also specify date ranges to narrow down your search.
 
-Diga adeus aos perfis sem graça. Com nossos **[templates de perfil](https://github.com/iuricode/readme-template/tree/main/perfil)**, você terá um readme de perfil íncrivel. Com cores vibrantes,imagens surpreendentes e outros elementos visuais cativantes.
+Retrieve Scores: Get security scores for your Cymulate environment using the Get-CymScores function. This includes scores for various security metrics.
 
-## Templates de repositório 🎉
+Retrieve Environments: List available environments in your Cymulate account using the Get-CymEnvironments function.
 
-Documente seus projetos com nossos exemplos de **[templates de repositório](https://github.com/iuricode/readme-template/tree/main/repositorio)** incríveis. Esses templates abrangem diversas seções essenciais, incluindo descrição, instalação, uso, contribuição e licença.
+Retrieve Immediate Threat Intelligence: Fetch immediate threat intelligence data, filterable by date, name, MD5 hash, and status using the Get-CymIMTioc function.
+
+## Usage ☕️
+
+To use this PowerShell module, you'll need to obtain your Cymulate API key and set it using the Connect-CymApi function. Once authenticated, you can make API calls to retrieve the desired information.
+
+For detailed usage instructions and examples, please refer to the documentation (replace with a link to your documentation)..
+
+## Installation 🎉
+
+Clone or download this repository to your local machine.
+Import the module by running the following command in PowerShell:
+`Import-Module .\MyApiModule.psm1`
+Set your Cymulate API key using the Connect-CymApi function:
+`Connect-CymApi -ApiKey "your_api_key_here"`
+You are now ready to use the module and its functions as described in the documentation
+
 
 ## Status e badges shields 🦄
 
