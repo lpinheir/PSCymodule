@@ -26,7 +26,7 @@ For detailed usage instructions and examples, please refer to the documentation 
 1. Clone or download this repository to your local machine
 2. Import the module by running the following command in PowerShell:
    
-- `Import-Module .\MyApiModule.psm1`
+- `Import-Module .\PSCymodule.psm1`
   
 3. Set your Cymulate API key using the Connect-CymApi function:
    
