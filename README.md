@@ -50,4 +50,4 @@ Contributions to this project are welcome! If you encounter issues or have sugge
 
 ## License ❤️
 
-This project is licensed under the MIT License.
+This project is licensed under the GPL License.
