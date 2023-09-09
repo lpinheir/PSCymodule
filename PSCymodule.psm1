@@ -1,4 +1,4 @@
-# MyApiModule.psm1
+# PSCymodule.psm1
 
 # Default API key (you can replace this with your actual default API key)
 $global:defaultApiKey = $null
@@ -48,6 +48,69 @@ function Invoke-ApiCall {
     catch {
         throw "API call failed: $_"
     }
+}
+function Get-PSCymHelp {
+    $CustomHelpMessage = @"
+=======================================================
+Cymulate PowerShell API Integration - Command Help
+=======================================================
+
+This script provides help and usage information for Cymulate API integration cmdlets.
+
+1. `Connect-CymApi` - Set Cymulate API Key
+---------------------------------------------------
+This function allows you to set your Cymulate API key for authentication.
+
+Usage:
+Connect-CymApi -ApiKey <your_api_key>
+Connect-CymApi -Help
+
+2. `Get-CymFindings` - Retrieve Security Findings
+---------------------------------------------------
+Retrieve security findings from the Cymulate platform based on various filters.
+
+Usage:
+Get-CymFindings [-module <module>] [-limit <limit>] [-name <name>] [-clientID <clientID>] [-agentUserID <agentUserID>] [-aptGroups <aptGroups>] [-softwares <softwares>] [-tactics <tactics>] [-techniques <techniques>] [-securityControl <securityControl>] [-risk <risk>] [-os <os>] [-prevStatus <prevStatus>] [-status <status>] [-type <type>] [-testCase <testCase>] [-date]
+Get-CymFindings -Help
+
+For data range (if -date is specified):
+Get-CymFindings -module <module> -limit <limit> -name <name> -date
+Enter dateFrom (YYYY-MM-DD): <date_from>
+Enter dateTo (YYYY-MM-DD): <date_to>
+
+3. `Get-CymScores` - Retrieve Security Scores
+---------------------------------------------------
+Retrieve security scores for your Cymulate environment.
+
+Usage:
+Get-CymScores -setenv <environment_id>
+Get-CymScores -Help
+
+Tip: To find your environment ID, run Get-CymEnvironments.
+
+4. `Get-CymEnvironments` - List Available Environments
+---------------------------------------------------
+List available environments in your Cymulate account.
+
+Usage:
+Get-CymEnvironments
+Get-CymEnvironments -Help
+
+5. `Get-CymIMTioc` - Retrieve Immediate Threat Intelligence
+---------------------------------------------------
+Retrieve immediate threat intelligence data with filters.
+
+Usage:
+Get-CymIMTioc -setpath <output_path> -fromdate <from_date> -todate <to_date> [-NameFilter <name_filter>] [-MD5Filter <md5_filter>] [-StatusFilter <status_filter>]
+
+Example:
+Get-CymIMTioc -fromdate 2023-01-10 -todate 2023-05-10 -MD5Filter <md5_hash_here>
+Get-CymIMTioc -Help
+
+For more information and detailed examples, refer to the documentation..
+"@
+
+    Write-Host $CustomHelpMessage
 }
 
 function Get-CymFindings {
@@ -526,4 +589,4 @@ function Construct-QueryString {
     return $queryString
 }
 
-Export-ModuleMember -Function Connect-CymApi, Get-CymFindings, Get-CymScores, Get-CymEnvironments, Get-CymIMTioc
+Export-ModuleMember -Function Connect-CymApi, Get-PSCymHelp, Get-CymFindings, Get-CymScores, Get-CymEnvironments, Get-CymIMTioc
