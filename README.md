@@ -19,7 +19,11 @@ Retrieve Immediate Threat Intelligence: Fetch immediate threat intelligence data
 
 To use this PowerShell module, you'll need to obtain your Cymulate API key and set it using the Connect-CymApi function. Once authenticated, you can make API calls to retrieve the desired information.
 
-For detailed usage instructions and examples, please refer to the documentation (replace with a link to your documentation)..
+For detailed usage instructions and examples, please refer to the documentation (replace with a link to your documentation).
+
+If you need more informations please run:
+
+- `Get-PSCymHelp`
 
 ## Installation 🎉
 
