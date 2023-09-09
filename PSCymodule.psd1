@@ -1,9 +1,9 @@
-# MyApiModule.psd1
+# PSCymodule.psd1
 
-# Module manifest for module 'MyApiModule'
+# Module manifest for module 'PSCymodule'
 
 @{
-    RootModule = 'MyApiModule.psm1'
+    RootModule = 'PSCymodule.psm1'
     ModuleVersion = '1.0'
     GUID = 'a7d61322-1369-4feb-b8cb-ea9a91774267'
     Author = 'Lucas M. Pinheiro'
