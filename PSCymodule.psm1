@@ -561,6 +561,13 @@ Get-CymIMTioc -fromdate 2023-01-10 -todate 2023-05-10 -MD5Filter your_md5_hash_h
     
             # Display the table
             $table | Format-Table -AutoSize
+            # Save data to CSV if setpath parameter is provided
+            if ($setpath) {
+                $csvFileName = "Cym_IMT_Data.csv"
+                $csvPath = Join-Path -Path $setpath -ChildPath $csvFileName
+                $table | Export-Csv -Path $csvPath -NoTypeInformation
+                Write-Host "Data saved to $csvPath"
+            }
         }
         else {
             Write-Host "No data found in the response."
